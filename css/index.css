@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial',sans-serif;
+}
+
+html {
+    text-size: 14px;
+    background: url("../img/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    max-height: 3.4rem;
+    max-width: auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline;
+    float: left;
+    text-align: center;
+    background-color: royalblue;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-family: 'Arial',sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #2176FF;
+    transition: color .1s ease-in, background-color .1s ease-in;
+}
+      
+header a:active {
+    font-size: 1.2rem;
+    transition: font-size .1s ease-in-out;
+}
+
+.cart img {
+    height: 0.8rem;
+    padding: 0 0.7rem;
+}
+
+.banner {
+    display: block;
+    background-image: url("../img/banner.jpg");
+    background-position: center top;
+    background-size: cover;
+    border-bottom: 1px solid #dddddd;
+    height: 12rem;
+    position: relative;
+    text-align: center;
+    top: 0.5rem;
+    width: 100%;
+}
+
+.banner h1 {
+    display: block;
+    width: 45%;
+    max-height: 80%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.banner a {
+    text-align: center;
+    background-color: royalblue;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-family: 'Arial',sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+h2 {
+    top: 1rem;
+    display: block;
+    width: 45%;
+    max-height: 80%;
+    margin: auto;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.cards {
+    margin-bottom: 40px;
+    padding: 80px 0px;
+    text-align: center;
+    display: flex;
+    align-items: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 1rem 1rem;
+  text-align: center;
+  font-family: 'Arial',sans-serif;
+}
+
+.card a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.card h3 {
+    font-family: 'Arial',sans-serif;
+    color: paleturquoise;
+    font-size: 1.5rem;
+    padding: 1%;
+    background-color: grey;
+}
+
+.price {
+  color: paleturquoise;
+  font-size: 1.6rem;
+  padding: 1%;
+  background-color: grey;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: palevioletred;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 900px) {
+    header {
+        padding: 0.5rem;
+        margin: auto;
+    }
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        flex: 1;
+        flex-wrap: wrap;
+        display: flex;
+        margin: auto;
+        max-width: 900px;
+    }
+    header a {
+        font-size: 2.1rem;
+    }
+    header a:active {
+        font-size: 2.1rem;
+        transition: font-size .1s ease-in-out;
+    }
+    .logo {
+        margin-top: 0.5rem;
+    }
+    .cart {
+        border-radius: 49%;
+        margin-right: 0.25rem;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 899px) {
+    header {
+        padding: 0.5rem;
+        margin: auto;
+    }
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        flex: 1;
+        flex-wrap: wrap;
+        display: flex;
+        margin: auto;
+        max-width: 680px;
+    }
+    .cart {
+        border-radius: 50%;
+        margin-right: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .logo img {
+        margin: auto;
+    }
+
+    header {
+        display: block;
+        width: 100%;
+    }
+    nav {
+        display: block;
+    }
+    nav a {
+        width: 100%;
+        margin: 0.1rem 0;
+    }
+    .banner {
+        display: flex;
+        margin: 0.4rem;
+    }
+}
+
+/**/
+
+fieldset {
+	font: "Arial", sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+
+fieldset h1{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+fieldset  input[type="text"],
+fieldset  input[type="date"],
+fieldset  input[type="datetime"],
+fieldset  input[type="email"],
+fieldset  input[type="number"],
+fieldset  input[type="search"],
+fieldset  input[type="time"],
+fieldset  input[type="url"],
+fieldset  textarea,
+fieldset  select {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+fieldset  input[type="text"]:focus,
+fieldset  input[type="date"]:focus,
+fieldset  input[type="datetime"]:focus,
+fieldset  input[type="email"]:focus,
+fieldset  input[type="number"]:focus,
+fieldset  input[type="search"]:focus,
+fieldset  input[type="time"]:focus,
+fieldset  input[type="url"]:focus,
+fieldset  textarea:focus,
+fieldset  select:focus
+{
+	box-shadow: 0 0 5px palevioletred;
+	padding: 3%;
+	border: 1px solid palevioletred;
+}
+
+fieldset  input[type="submit"],
+fieldset  input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: palevioletred;
+	border-bottom: 2px solid palevioletred;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+fieldset  input[type="submit"]:hover,
+fieldset  input[type="button"]:hover{
+	background: palevioletred;
+}
+
+.location-hours p, h2{
+    display: flex;
+    max-height: 80%;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.location-hours h2{
+    height: 100%;
+}
